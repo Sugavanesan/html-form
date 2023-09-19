@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+<body>
+    <center>
+      <table class="tab">
+        <form id="form">
+        <tr><h1> Registration Form</h1></tr>
+        <tr>
+          <td>First Name:</td>
+          <td>
+            <input
+              id="firstname"
+              type="text"
+              name="fnmae"
+              value=""
+              placeholder="First Name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td>
+            <input
+              id="lastname"
+              type="text"
+              name="lnmae"
+              value=""
+              placeholder="Last Name"
+              required
+            />
+          </td>
+        </tr>
+        <td>age:</td>
+        <td>
+          <input type="number" id=age name="age" value="age" min="18" required />
+        </td>
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" id=DoB name="dob" required /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input type="email" id=mail name="email" placeholder="email" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender :</td>
+          <td>
+            male <input id=gend type="radio" name="gender" value="M" required /> female <input id="gend"
+              type="radio"
+              name="gender"
+              value="F"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Degree</td>
+          <td>
+            <select id="degree" name="Degree" id="choose" required>
+              <option value="1">B.Tech</option>
+              <option value="2">B.sc</option>
+              <option value="3">BCA</option>
+              <option value="4">Diploma</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>skills:</td>
+          <td class="check">
+            <input type="checkbox" name="c" value="C" /> C 
+            <input type="checkbox" name="python" value="python" /> python 
+            <input
+              type="checkbox"
+              name="javascript"
+              value="javascript"
+            /> javascript 
+            <input type="checkbox" name="html&css" value="html&css" /> HTML&CSS 
+            <input type="checkbox" name="java" value="java" /> JAVA 
+          </td>
+        </tr>
+        <tr>
+          <td>Resume:</td>
+          <td>
+            <input id="resume" type="file" name="file" placeholder="file" required />
+          </td>
+        </tr>
+        <td>About:</td>
+          <td>
+          <textarea name="text" placeholder="Tell me about you in Brief"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit" /></td>
+          <td><input type="reset" value="Reset"/> </td>
+        </tr>
+      </table>
+      </form>
+    </center>
+</body>
+</html>
